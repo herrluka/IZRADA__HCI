@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\doktor-pregledi.png" />
+    <None Remove="Images\doktor-zahtevi.png" />
+    <None Remove="Images\h_icon.png" />
+    <None Remove="Images\kartoni.png" />
+    <None Remove="Images\lekovi.png" />
+    <None Remove="Images\notifikacije.png" />
+    <None Remove="Images\pomoc.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\kartoni.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Wpf.MVVMC" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\doktor-pregledi.png" />
+    <Resource Include="Images\doktor-zahtevi.png" />
+    <Resource Include="Images\h_icon.png" />
+    <Resource Include="Images\lekovi.png" />
+    <Resource Include="Images\notifikacije.png" />
+    <Resource Include="Images\pomoc.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\net6.0-windows\Images\" />
+  </ItemGroup>
+
+</Project>
